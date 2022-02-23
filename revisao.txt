@@ -1,1 +1,2 @@
 revisando conteúdos de Git e GitHub
+revendo git clone e git push
