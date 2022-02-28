@@ -5,15 +5,38 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
- h1 {height: 65px;
-color: orange;}
+        body {
+            font-size: 16px;
+        }
 
-ul li {
-    background-color: orange;
-}
+        h1 {
+            color: orange;
+            font-size: 65px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: right;
+        }
 
-.cordefundo{ background-color: aqua;}
+        p {
+            font-weight: 600;
+            font-size: 3;
+            line-height: 3;
+            font-style: oblique;
+            text-align: center;
+        }
 
+        ul li {
+            background-color: rgb(236, 216, 178);
+            line-height: 25px;
+            text-decoration:underline;
+        }
+
+        .cordefundo {
+            background-color: aqua;
+        }
+
+        #amarelo {color: yellow;}
+        #vermelho {color: red;}
+        #marrom {color: brown;}
     </style>
 </head>
 
@@ -21,9 +44,9 @@ ul li {
     <h1> Exercícios 3.2 </h1>
     <p class="cordefundo"> Qual a sua cor favorita?</p>
     <ul class="cordefundo">
-        <li> Amarelo </li>
-        <li> Vermelho </li>
-        <li> Marrom </li>
+        <li id="amarelo"> Amarelo </li>
+        <li id="vermelho"> Vermelho </li>
+        <li id="marrom"> Marrom </li>
     </ul>
 
 </body>
