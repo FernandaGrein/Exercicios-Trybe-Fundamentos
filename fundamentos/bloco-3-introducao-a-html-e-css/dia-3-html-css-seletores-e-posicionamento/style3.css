@@ -1,0 +1,7 @@
+h1,p { text-align: center;}
+li:hover{ color: blue;} 
+a {text-decoration: none;}
+a:active {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+a:visited {color: black;}
+a:hover{color: blue;}
+ul, ol {list-style: none;}
