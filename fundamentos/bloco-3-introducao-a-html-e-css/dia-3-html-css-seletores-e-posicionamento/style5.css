@@ -19,3 +19,9 @@ li em {font-weight: bolder;}
 
 li.corazul {color: blue;}
 li.corazul.java {background-color: pink;}
+
+a#stack:hover { font-weight: bolder; color: orange;}
+a#w3:hover { font-weight: bolder; color: rgb(3, 92, 3);}
+a#mdn:hover { font-weight: bolder; color:black;}
+a#dev:hover { font-weight: bolder; color:rgb(190, 188, 47);}
+a#trybe:hover { font-weight: bolder; color: rgb(34, 138, 34);}
