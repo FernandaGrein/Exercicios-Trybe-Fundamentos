@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    color: orange;
+    font-size: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3;
+    line-height: 3;
+    font-style: oblique;
+    text-align: center;
+}
+
+ul li {
+    background-color: rgb(236, 216, 178);
+    line-height: 25px;
+    text-decoration:underline;
+}
+
+.cordefundo {
+    background-color: aqua;
+}
+
+#amarelo {background-color: rgb(255, 255, 0); font-size: large;}
+#vermelho {background-color:red; font-size: large;}
+#marrom {background-color:brown; font-size: large;}
