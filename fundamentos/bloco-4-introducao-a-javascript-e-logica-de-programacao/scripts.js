@@ -60,3 +60,18 @@ if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "qu
 } else {
     console.log ("FINALMENTE, descanso merecido UwU")
 };
+
+let candidato = "grupo azul";
+switch(candidato) {
+    case "grupo azul": 
+      console.log ("aprovada");
+      break;
+    case "grupo amarelo": 
+      console.log ("Lista de espera");
+      break;
+    case "grupo vermelho":
+        console.log ("reprovada");
+        break;
+    default:
+        console.log ("não se aplica")
+};
