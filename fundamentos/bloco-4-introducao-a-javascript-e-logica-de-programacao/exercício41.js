@@ -22,3 +22,12 @@ if (a>b && a>c) {
 } else {
     console.log (c)
 };
+
+const d = 54;
+if ( d>0) {
+    console.log ("positivo")
+} else if (d<0) {
+    console.log ("negativo")
+} else {
+    console.log ("zero")
+};
