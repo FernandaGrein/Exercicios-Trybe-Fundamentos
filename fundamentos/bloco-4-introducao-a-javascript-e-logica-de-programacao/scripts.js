@@ -75,3 +75,11 @@ switch(candidato) {
     default:
         console.log ("não se aplica")
 };
+
+let menu = 1;
+switch (menu) {
+    case 1: console.log("Trybe Lanche Feliz");
+    break;
+    ca
+
+}

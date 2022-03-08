@@ -31,3 +31,13 @@ if ( d>0) {
 } else {
     console.log ("zero")
 };
+const e = 60;
+const f = 60;
+const g = 60;
+if ( e + f+ g === 180 ) {
+  console.log ("true")
+} else if (e<=0 || f<=0 || g<=0) {
+    console.log ("erro")
+} else {
+    console.log ("false")
+};
