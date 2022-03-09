@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //1
 for (var indice =0; indice < numbers.length; indice+=1) {
@@ -41,9 +41,16 @@ for (var indice =1; indice < numbers.length; indice+=1){
 console.log (maiorValor)
 
 //6
+//let numbers = [ 2,4,6,8,10,];
 let numerosImpares = 0;
-for (var indice =0; indice < numbers.length; indice+=1)
-if ( numbers[indice] % 2 !== 0) {
-    numerosImpares +=1
-} console.log(numerosImpares);
+for (var indice =0; indice < numbers.length; indice+=1) { 
+    if ( numbers[indice] % 2 !== 0) {
+        numerosImpares +=1 
+    }
+}
 
+    if (numerosImpares === 0) {
+        console.log ("nenhum valor ímpar encontrado")
+    } else {
+        console.log(numerosImpares)
+    }
