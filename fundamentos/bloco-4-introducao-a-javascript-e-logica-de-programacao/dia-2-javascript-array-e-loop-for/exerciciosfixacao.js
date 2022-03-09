@@ -54,3 +54,12 @@ for (var indice =0; indice < numbers.length; indice+=1) {
     } else {
         console.log(numerosImpares)
     }
+
+//7
+let menorValor = numbers [0]
+for (var indice =1; indice < numbers.length; indice+=1){
+    if (numbers[indice] < menorValor) {
+        menorValor = numbers[indice]
+    } 
+} 
+console.log(menorValor);
