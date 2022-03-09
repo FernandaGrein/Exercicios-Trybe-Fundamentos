@@ -9,12 +9,14 @@ console.log (Math.max (a,b));
 const c = 10;
 console.log (Math.max (a,b,c));
 
+//exercicio 2
 if ( a>b) {
     console.log (a)
 } else {
     console.log (b)
 };
 
+//exercicio 3
 if (a>b && a>c) {
     console.log (a)
 } else if (b>a && b>c) {
@@ -23,6 +25,7 @@ if (a>b && a>c) {
     console.log (c)
 };
 
+//exercício 4
 const d = 54;
 if ( d>0) {
     console.log ("positivo")
@@ -31,6 +34,8 @@ if ( d>0) {
 } else {
     console.log ("zero")
 };
+
+// ecercício 5
 const e = 60;
 const f = 60;
 const g = 60;
@@ -41,3 +46,6 @@ if ( e + f+ g === 180 ) {
 } else {
     console.log ("false")
 };
+
+//exercício 6
+
