@@ -21,7 +21,8 @@ for (let index =1; index< factorial.length; index+=1) {
 
 //criar a variavel com uma string
 //criar uma variável para armazenar o resultado
-//criar um looping que percorra a string 
+//criar um looping que percorra a string de trás para frente  
+// adicionar na variável os índices da string na ordem invertida
 
 
 let word = 'tryber';
@@ -41,9 +42,27 @@ for (let index2 = word.length-1; index2 >=0; index2 -=1) {
 
 // abrir uma variável que se inicia na primeira posição do array para adicionar a maior palavra
 //percorrer o array verificando o tamanho de cada palavra
-//se a palavra da posição atual for menor que a palavra da posição analisada
-// a varíavel é alterada para a palavra da posição analisada 
+// quando o tamanho do index for maior que o tamando valor da variável 'maiorPalavra', entra no if 
+// altera a variavel 'maiorPalavra' para o index do array localizado
 // o loop corre até que todas as palavras sejam comparadas
 // imprime no terminar a maior palavra encontrada
 // o processo é o mesmo para localizar a menor palavra
 
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = array [0]
+let menorPalavra = array[0]
+
+for (let contador =0; contador< array.length; contador +=1){
+    if (array[contador].length > maiorPalavra.length) {
+        maiorPalavra = array[contador]
+    }
+}
+
+for (let contador =0; contador< array.length; contador +=1){
+    if (array[contador].length < menorPalavra.length) {
+        menorPalavra = array[contador]
+    }
+}
+
+console.log ('Maior Palavra ' , maiorPalavra); 
+console.log ('Menor palavra ' , menorPalavra);
