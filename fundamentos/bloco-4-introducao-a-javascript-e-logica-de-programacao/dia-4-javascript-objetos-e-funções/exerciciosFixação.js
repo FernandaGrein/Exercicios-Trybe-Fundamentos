@@ -35,3 +35,31 @@ console.log('A jogadora Marta Silva foi eleita a melhor do mundo por 6 vezes ' +
 // "A jogadora possui 2 medalhas de ouro e 3 medalhas de prata".
 
 console.log('A jogadora possui ' + athlete.medals.golden + ' medalhas de ouro e ' +athlete.medals.silver + ' medalhas de prata.'); 
+
+// Exercícios for/in , for/of 
+//1 - Usando o objeto abaixo, utilize for/in e imprima no console a mensagem 
+// 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
+
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge',
+  };
+
+  for ( let index in names) {
+      console.log('olá '+ names[index]);
+  } 
+
+//2 - Usando o objeto abaixo, utilize for/in e imprima um console.log com as 
+// chaves e valores desse objeto.
+
+let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+  for(let index in car) {
+      console.log( index + ': ' + car[index]);
+  }
+
+  
