@@ -32,3 +32,29 @@ for (let index in array) {
 
 }
  highestValue ([2, 3, 6, 7, 10, 1])
+
+ //3 Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+ function lowestValue (secondoArray) {
+let lowestIndex = 0 
+
+for( let ind in secondoArray) {
+    if (secondoArray[lowestIndex] > secondoArray[ind]) {
+        lowestIndex = ind
+    }
+} console.log(lowestIndex)
+ } lowestValue([2, 4, 6, 7, 10, 0, -3]);
+
+ // 4 - Crie uma função que receba um array de nomes 
+ //e retorne o nome com a maior quantidade de caracteres.
+
+ function highestName (word) {
+     let biggestWord = word[0]
+    for (let index =0; index<word.length; index+=1) {
+        if (biggestWord.length < word[index].length) {
+            biggestWord = word[index]
+        } 
+    } console.log(biggestWord)
+ }
+
+ highestName (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
