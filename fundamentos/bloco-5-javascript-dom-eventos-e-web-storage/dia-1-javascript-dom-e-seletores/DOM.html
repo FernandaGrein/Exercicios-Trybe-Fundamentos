@@ -77,7 +77,16 @@
 
         
         // document.getElementsByTagName("p")[0].innerText.toUpperCase();
-        console.log(document.getElementsByTagName("p"));
+       function showText (elem) {
+           const visible = document.getElementsByTagName(elem)
+           for (i= 0; i < visible.length; i += 1) { 
+              visible[i].innerText
+           }
+           console.log(visible)
+       } showText ("p")
+       // console.log(document.getElementsByTagName("p")[0].innerText);
+       //console.log(document.getElementsByTagName("p")[1].innerText);
+       //console.log(document.getElementsByTagName("p")[2].innerText);
     </script>
 </body>
 
