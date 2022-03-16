@@ -59,56 +59,95 @@
 
 <body>
     <script>
-    //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-    //Adicione a tag main com a classe main-content como filho da tag body ;
-    //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-    //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-    //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-    //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-    
-    //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
-    //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-    //Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-     
-    //ex1
-    document.getElementsByTagName("body")
-    const container = document.getElementsByTagName('body');
-    let hUm = document.createElement('h1');
-    hUm.innerHTML = "Exercício 5.2 - JavaScript DOM";
-    container[0].appendChild(hUm);
-    
-    //ex2
-    let tagMain = document.createElement("main");
-    tagMain.className = "main-content";
-    //tagMain.innerText = "texto main"
-    container[0].appendChild(tagMain);
-    console.log(container)
+        //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+        //Adicione a tag main com a classe main-content como filho da tag body ;
+        //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+        //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+        //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+        //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
-    //ex3
-    let tagSection = document.createElement("section");
-    tagSection.className = "center-content"
-    //tagSection.innerText = "texto section"
-    tagMain.appendChild(tagSection)
+        //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+        //Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
 
-    //ex4
-    let tagP = document.createElement("p");
-    tagP.innerText = "texto do paragrafo na section";
-    tagSection.appendChild(tagP)
+        //ex1
+        document.getElementsByTagName("body")
+        const container = document.getElementsByTagName('body');
+        let hUm = document.createElement('h1');
+        hUm.innerHTML = "Exercício 5.2 - JavaScript DOM";
+        container[0].appendChild(hUm);
 
-    //ex5
-    let section2 = document.createElement("section");
-    section2.className = "left-content";
-    section2.innerText = "adiciona section 2";
-    tagMain.appendChild(section2);
+        //ex2
+        let tagMain = document.createElement("main");
+        tagMain.className = "main-content";
+        //tagMain.innerText = "texto main"
+        container[0].appendChild(tagMain);
+        console.log(container)
 
-    //ex6
-    let section3 = document.createElement("section");
-    section3.className = "right-content";
-    section3.innerText = "adiciona section 3";
-    tagMain.appendChild(section3);
+        //ex3
+        let tagSection = document.createElement("section");
+        tagSection.className = "center-content"
+        //tagSection.innerText = "texto section"
+        tagMain.appendChild(tagSection)
 
-    //ex7
+        //ex4
+        let tagP = document.createElement("p");
+        tagP.innerText = "texto do paragrafo na section";
+        tagSection.appendChild(tagP)
 
+        //ex5
+        let section2 = document.createElement("section");
+        section2.className = "left-content";
+        section2.innerText = "adiciona section 2";
+        tagMain.appendChild(section2);
+
+        //ex6
+        let section3 = document.createElement("section");
+        section3.className = "right-content";
+        section3.innerText = "adiciona section 3";
+        tagMain.appendChild(section3);
+
+        //ex7
+        let image = document.createElement("img");
+        image.src = "https://picsum.photos/200";
+        image.className = "small-image";
+        section2.appendChild(image);
+
+        //ex8 
+        let list1 = document.createElement("li");
+         list1.innerText = "um";
+         section3.appendChild(list1);
+         let list2 = document.createElement("li");
+         list2.innerText = "dois";
+         section3.appendChild(list2);
+         let list3 = document.createElement("li");
+         list3.innerText = "três";
+         section3.appendChild(list3);
+         let list4 = document.createElement("li");
+         list4.innerText = "quatro";
+         section3.appendChild(list4);
+         let list5 = document.createElement("li");
+         list5.innerText = "cinco";
+         section3.appendChild(list5);
+         let list6 = document.createElement("li");
+         list6.innerText = "seis";
+         section3.appendChild(list6);
+         let list7 = document.createElement("li");
+         list7.innerText = "sete";
+         section3.appendChild(list7);
+         let list8 = document.createElement("li");
+         list8.innerText = "oito";
+         section3.appendChild(list8);
+         let list9 = document.createElement("li");
+         list9.innerText = "nove";
+         section3.appendChild(list9);
+         let list10 = document.createElement("li");
+         list10.innerText = "dez";
+         section3.appendChild(list10);
+
+         //ex 9:
+         
+       
 
 
     </script>
