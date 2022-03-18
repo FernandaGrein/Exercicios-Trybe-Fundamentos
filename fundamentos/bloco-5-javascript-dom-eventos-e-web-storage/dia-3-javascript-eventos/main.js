@@ -47,14 +47,25 @@ function addAndremoveTech3() {
 myWebpage.addEventListener("dblclick", addWeb)
 
 function addWeb() {
-  let myGit = window.open("https://github.com/FernandaGrein", "_blank"); 
-return myGit
+ let myGit = window.open("https://github.com/FernandaGrein", "_blank"); 
+ return myGit
 } 
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
 // Segue abaixo um exemplo do uso de event.target:
+
+myWebpage.addEventListener("mouseover", changeColor)
+myWebpage.addEventListener("mouseleave", colorBack)
+
+function changeColor (event) {
+event.target.style.color = "orange"
+}
+
+function colorBack (event) {
+  event.target.style.color = "white"
+}
 
 
 function resetText(event) {
