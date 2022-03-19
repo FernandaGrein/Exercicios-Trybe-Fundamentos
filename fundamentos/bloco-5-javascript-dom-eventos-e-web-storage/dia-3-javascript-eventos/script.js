@@ -28,15 +28,15 @@ function addDezemberDays() {
         let daysNumbers = dezDaysList[index];
         let dezDaysListItem = document.createElement("li");
 
-        if (daysNumbers === 24 || daysNumbers === 31 ){
+        if (daysNumbers === 24 || daysNumbers === 31) {
             dezDaysListItem.classList = "day holiday";
             dezDaysListItem.innerHTML = daysNumbers;
-            
-        } else if ( daysNumbers === 4 || daysNumbers === 11 || daysNumbers === 18 ) {
+
+        } else if (daysNumbers === 4 || daysNumbers === 11 || daysNumbers === 18) {
             dezDaysListItem.classList = "day friday";
             dezDaysListItem.innerHTML = daysNumbers;
 
-        } else if (daysNumbers === 25 ) {
+        } else if (daysNumbers === 25) {
             dezDaysListItem.classList = "day friday holiday";
             dezDaysListItem.innerHTML = daysNumbers;
 
@@ -65,7 +65,7 @@ function addDezemberDays() {
 //Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 // https://www.devmedia.com.br/forum/criar-botao-dinamicamente-no-javascript/554111
 
-const divPai = document.querySelector(".buttons-container")
+let divPai = document.querySelector(".buttons-container")
 let button = document.createElement("button");
 
 function creatButtons(string) {
@@ -86,17 +86,27 @@ let buttons = document.querySelector("#btn-holiday")
 buttons.addEventListener("click", newColor)
 let holydayDays = document.querySelectorAll(".holiday")
 
-function newColor (){
-    for (index = 0; index < holydayDays.length; index += 1 ) {
-        if (holydayDays[index].style.background === "orange" )
-        {
+function newColor() {
+    for (index = 0; index < holydayDays.length; index += 1) {
+        if (holydayDays[index].style.background === "orange") {
             holydayDays[index].style.background = "rgb(238,238,238)"
         } else {
             holydayDays[index].style.background = "orange"
         }
-        
+
     }
-   
-} 
 
+}
 
+// ex 4 Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+//Adicione a este botão o ID "btn-friday" .
+//Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function createNewButton (friday) {
+    newButton = document.createElement('button')
+    newButton.innerHTML = friday
+    newButton.id = 'btn-friday'
+
+    divPai.appendChild(createNewButton);
+
+} createNewButton ('Sexta-feira');
