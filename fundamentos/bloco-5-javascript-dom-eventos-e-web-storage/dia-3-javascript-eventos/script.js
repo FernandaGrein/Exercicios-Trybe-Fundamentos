@@ -25,17 +25,35 @@ const ulDays = document.getElementById("days");
 function addDezemberDays() {
 
     for (let index = 0; index < dezDaysList.length; index += 1) {
-        const daysNumbers = dezDaysList[index];
-        const dezDaysListItem = document.createElement("li")
-        dezDaysListItem.innerHTML = daysNumbers;
-        dezDaysListItem.classList = "day"
-        dezDaysList[24].classList = "day holiday"
-        dezDaysList[25].classList = "day holiday"
-        dezDaysList[31].classList = "day holiday"
-        dezDaysList[4].classList = "day friday"
-        dezDaysList[11].classList = "day friday"
-        dezDaysList[18].classList = "day friday"
-        dezDaysList[25].classList = "day friday holiday"
+        let daysNumbers = dezDaysList[index];
+        let dezDaysListItem = document.createElement("li");
+
+        if (daysNumbers === 24 || daysNumbers === 31 ){
+            dezDaysListItem.classList = "day holiday";
+            dezDaysListItem.innerHTML = daysNumbers;
+            
+        } else if ( daysNumbers === 4 || daysNumbers === 11 || daysNumbers === 18 ) {
+            dezDaysListItem.classList = "day friday";
+            dezDaysListItem.innerHTML = daysNumbers;
+
+        } else if (daysNumbers === 25 ) {
+            dezDaysListItem.classList = "day friday holiday";
+            dezDaysListItem.innerHTML = daysNumbers;
+
+        } else {
+            dezDaysListItem.classList = "day";
+            dezDaysListItem.innerHTML = daysNumbers;
+        }
+
+        // dezDaysListItem.innerHTML = daysNumbers;
+        // dezDaysListItem.classList = "day"
+        // dezDaysList[24].classList = "day holiday"
+        // dezDaysList[25].classList = "day holiday"
+        // dezDaysList[31].classList = "day holiday"
+        // dezDaysList[4].classList = "day friday"
+        // dezDaysList[11].classList = "day friday"
+        // dezDaysList[18].classList = "day friday"
+        // dezDaysList[25].classList = "day friday holiday"
 
         ulDays.appendChild(dezDaysListItem)
     };
@@ -64,12 +82,21 @@ function creatButtons(string) {
 //É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
 // https://www.w3schools.com/howto/howto_js_toggle_class.asp
 
-// let buttons = document.querySelector("#btn-holiday")
-// buttons.addEventListener("click", newColor)
-// let holydayDays = dezDaysList[25]
-// console.log(holydayDays)
+let buttons = document.querySelector("#btn-holiday")
+buttons.addEventListener("click", newColor)
+let holydayDays = document.querySelectorAll(".holiday")
 
-// function newColor () {
-//    holydayDays.style.backgroundColor = "orange"
+function newColor (){
+    for (index = 0; index < holydayDays.length; index += 1 ) {
+        if (holydayDays[index].style.background === "orange" )
+        {
+            holydayDays[index].style.background = "rgb(238,238,238)"
+        } else {
+            holydayDays[index].style.background = "orange"
+        }
+        
+    }
+   
+} 
 
-// }
+
