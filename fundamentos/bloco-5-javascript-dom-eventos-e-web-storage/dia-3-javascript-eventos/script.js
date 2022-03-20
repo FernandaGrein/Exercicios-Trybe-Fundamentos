@@ -130,12 +130,12 @@ buttonFriday.addEventListener("click", changeText)
 
 function changeText() {
     for (let index = 0; index < daysWithFridayClass.length; index += 1) {
-            
+
         if (daysWithFridayClass[index].innerHTML === "sextouu!!") {
             daysWithFridayClass[0].innerHTML = 4
-            daysWithFridayClass[1].innerHTML = 11 
-            daysWithFridayClass[2].innerHTML = 18 
-            daysWithFridayClass[3].innerHTML = 25 
+            daysWithFridayClass[1].innerHTML = 11
+            daysWithFridayClass[2].innerHTML = 18
+            daysWithFridayClass[3].innerHTML = 25
 
         } else {
             daysWithFridayClass[index].innerText = "sextouu!!"
@@ -145,6 +145,25 @@ function changeText() {
 
 // ex 6
 // Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-//
-//
+// pegar os dias com a classe day 
+//Dica - Propriedade: event.target .
+//adicionar um eventListener  - mouseover
+// adicionar mouseleave
+// fazer uma função aumentando a font-size 
+
+let zoomDays = document.querySelector("#days")
+zoomDays.addEventListener("mouseover", addzoom);
+zoomDays.addEventListener("mouseout", zoomOut);
+
+function addzoom (event) {
+  event.target.style.fontSize = "30px";
+  event.target.style.color = "green"
+} addzoom()
+
+function zoomOut (event) {
+  event.target.style.fontSize = "20px"
+  event.target.style.color = "gray"
+}zoomOut ()
+
+// ex7 
 
