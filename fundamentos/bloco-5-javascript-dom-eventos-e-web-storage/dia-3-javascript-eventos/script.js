@@ -151,19 +151,51 @@ function changeText() {
 // adicionar mouseleave
 // fazer uma função aumentando a font-size 
 
-let zoomDays = document.querySelector("#days")
-zoomDays.addEventListener("mouseover", addzoom);
-zoomDays.addEventListener("mouseout", zoomOut);
+// let zoomDays = document.querySelector("#days")
+// zoomDays.addEventListener("mouseover", addzoom);
+// zoomDays.addEventListener("mouseout", zoomOut);
 
-function addzoom (event) {
-  event.target.style.fontSize = "30px";
-  event.target.style.color = "green"
-} addzoom()
+// function addzoom(event) {
+//   event.target.style.fontSize = "30px";
+//   event.target.style.color = "green"
+// } addzoom()
 
-function zoomOut (event) {
-  event.target.style.fontSize = "20px"
-  event.target.style.color = "gray"
-}zoomOut ()
+// function zoomOut(event) {
+//     event.target.style.fontSize = "20px"
+//     event.target.style.color = "gray"
+// } zoomOut()
 
 // ex7 
+// Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+//add a div pai em uma variável
+//em uma função que receba as tarefas como parâmetro -  criar um elemento span 
 
+let divTask = document.querySelector(".my-tasks");
+
+function createTask(task) {
+    let newTask = document.createElement("span")
+    newTask.innerHTML = task
+
+    divTask.appendChild(newTask)
+
+} createTask("cozinhar")
+
+
+// ex8
+//Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+function legendWithColor(color) {
+    let newlegend = document.createElement("div");
+    newlegend.style.color = color
+    newlegend.classList = "task"
+
+    divTask.appendChild(newlegend)
+
+} legendWithColor("rgn 102, 102, 102")
+
+// ex9
+//Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+//Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
