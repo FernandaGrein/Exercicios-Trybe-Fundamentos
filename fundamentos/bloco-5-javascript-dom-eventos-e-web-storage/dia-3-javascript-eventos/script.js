@@ -93,9 +93,7 @@ function newColor() {
         } else {
             holydayDays[index].style.background = "orange"
         }
-
     }
-
 }
 
 // ex 4 
