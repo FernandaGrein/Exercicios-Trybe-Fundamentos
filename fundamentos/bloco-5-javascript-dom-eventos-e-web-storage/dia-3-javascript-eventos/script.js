@@ -102,17 +102,51 @@ function newColor() {
 //Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
 //Adicione a este botão o ID "btn-friday" .
 //Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+let container = document.querySelector(".buttons-container");
+let fridayButton = document.createElement("button");
 
-let newButton = document.createElement("button");
+function createFridayButton(text) {
 
-function createNewButton (friday) {
-  newButton.innerHTML = friday
-  newButton.id = 'btn-friday'
+    fridayButton.id = "btn-friday"
+    fridayButton.innerText = text
 
-  divPai.appendChild(createNewButton);
+    container.appendChild(fridayButton);
 
-} createNewButton ('Sexta-feira');
+} createFridayButton("Sexta-feira")
+
 
 // ex 5 
 // Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
 // É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+// adicionar um eventListener
+// selecionar os dias com a classe sexta
+// fazer um for para percorrer todos os dias com a classe sexta feira
+// criar uma função com style.text 
+// usar um if /else 
+
+let daysWithFridayClass = document.querySelectorAll(".friday")
+let buttonFriday = document.querySelector("#btn-friday")
+buttonFriday.addEventListener("click", changeText)
+
+
+function changeText() {
+    for (let index = 0; index < daysWithFridayClass.length; index += 1) {
+            
+        if (daysWithFridayClass[index].innerHTML === "sextouu!!") {
+            daysWithFridayClass[0].innerHTML = 4
+            daysWithFridayClass[1].innerHTML = 11 
+            daysWithFridayClass[2].innerHTML = 18 
+            daysWithFridayClass[3].innerHTML = 25 
+
+        } else {
+            daysWithFridayClass[index].innerText = "sextouu!!"
+        }
+    }
+} changeText()
+
+// ex 6
+// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+//
+//
+
