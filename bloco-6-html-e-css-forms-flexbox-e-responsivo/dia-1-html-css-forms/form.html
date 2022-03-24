@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário da TrybeTrip</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Concorra a uma viagem de Férias!! </h1>
+    </header>
+    <main>
+        <div class="nameBox">
+            <label for="personalName"> Nome:
+                <input type="text" name="fullName" id="pernosalName" min="10" max="40" required>
+            </label>
+        </div>
+        <div class="emailBox">
+            <label for="Email"> Email:
+                <input type="text" name="email" id="Email" min="10" max="50" required>
+            </label>
+            <div class="destinyBox">
+                <fieldset class="destinyField">
+                    <legend>Escolha um destino </legend>
+                    <label for="city">
+                        <input type="radio" id="city" name="destiny"> Nova York
+                    </label>
+                    <label for="beach">
+                        <input type="radio" id="beach" name="destiny"> Cancun
+                    </label>
+                    <label for="alps">
+                        <input type="radio" id="alps" name="destiny"> Alpes Suíços
+                    </label>
+                    <label for="field">
+                        <input type="radio" id="field" name="destiny"> Castelo de Windsor
+                    </label>
+                </fieldset>
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
