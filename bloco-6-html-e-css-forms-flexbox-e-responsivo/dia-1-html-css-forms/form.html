@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulário da TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -53,14 +54,17 @@
             </label>
         </div>
         <div class="checkboxes">
-
-            
+            <input type="checkbox" name="checks" id="oferts" value="receiveOferts">
+            <label for="oferts"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <br>
+            <input type="checkbox" name="checks" id="disclosure" value="acceptDisclousure" required>
+            <label for="disclosure"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+                concursos futuros.</label>
         </div>
-
-
-
+        <div class="button">
+            <button type="submit">Concorrer! </button>
+        </div>
     </main>
-
     <script src="script2.js"></script>
 </body>
 
