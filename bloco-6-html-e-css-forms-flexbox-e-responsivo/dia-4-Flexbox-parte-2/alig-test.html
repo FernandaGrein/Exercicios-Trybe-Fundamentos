@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX - ALIGN SELF</title>
+    <style>
+        .container1 {
+            border: 1px solid black;
+            display: flex;
+            height: 300px;
+            margin: auto;
+            width: 500px;
+        }
+
+        .keep {
+            align-self: center;
+            background-color: #FAA488;
+            display: flex;
+            justify-content: center;
+            width: 150px;
+            list-style: none;
+            /* order: 1; */
+        }
+
+        .change {
+            /* Altere a propriedade align-self. */
+            align-self: flex-end;
+            background-color: #FBD26A;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            list-style: none;
+            /* order: 2; */
+        }
+
+        .container {
+            display: flex;
+            height: 50px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .box {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            /* Altere a propriedade flex-basis */
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        .one {
+            background-color: #FBD26A;
+            list-style: none;
+            /* order: 2; */
+            /* flex-shrink: 1; */
+        }
+
+        .two {
+            background-color: #FAA488;
+            list-style: none;
+            /* order: 3; */
+            /* flex-shrink: 15; */
+        }
+
+        .three {
+            background-color: #9069EF;
+            list-style: none;
+            /* order: 1; */
+            flex-shrink: 30;
+        }
+
+        .four {
+            background-color: #006472;
+            list-style: none;
+            /* flex-shrink: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container1">
+        <li class="keep">REFERÊNCIA</li>
+        <li class="change">ELEMENTO TESTE</li>
+        <li class="keep">REFERÊNCIA</li>
+    </ul>
+    <ul class="container">
+        <li class="box one">1</li>
+        <li class="box two">2</li>
+        <li class="box three">3</li>
+        <li class="box four">4</li>
+    </ul>
+</body>
+
+</html>
