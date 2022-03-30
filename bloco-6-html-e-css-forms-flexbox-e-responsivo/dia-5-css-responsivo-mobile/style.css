@@ -24,10 +24,13 @@ body {
     font-weight: 300;
   }
   
-  p.trick {
-    color: white;
-    font-size: 14px;
+  @media screen and (max-width: 500px) {
+    p.trick {
+        color: white;
+        font-size: 14px;
+      }   
   }
+ 
   
   p strong {
     font-weight: 700;
