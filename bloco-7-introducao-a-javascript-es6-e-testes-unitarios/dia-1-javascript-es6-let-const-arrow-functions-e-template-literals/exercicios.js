@@ -26,7 +26,7 @@ const testingScope = escopo => {
   } else {
     console.log(elseScope)
   }
-  
+
 }
 testingScope(true)
 
@@ -38,7 +38,7 @@ const testingScope = escopo => {
   } else {
     console.log(`${elseScope}`)
   }
-  
+
 }
 testingScope(false)
 
@@ -58,8 +58,7 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 console.log(oddsAndEvens); // será necessário alterar essa linha 😉 
 
 oddsAndEvens.sort((a, b) => a - b)
-console.log (`Os númeors ${oddsAndEvens} se encontram ordenados de forma crescente!`)
-
+console.log(`Os númeors ${oddsAndEvens} se encontram ordenados de forma crescente!`)
 
 
 // Abaixo, você verá algumas especificações de algoritmos para desenvolver. É fundamental que você utilize o que aprendeu sobre let , const , arrow functions , template literals e ternary operator .
@@ -68,7 +67,28 @@ console.log (`Os númeors ${oddsAndEvens} se encontram ordenados de forma cresce
 // Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 
+const fatorial = number => {
+  let soma = 1
+  for (let index = 2; index <= number; index += 1) {
+    soma *= index
+  }
+  return soma;
+}
+console.log(fatorial(4));
 
-longestWord('Antônio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
 
-const fatorial = 4;
+
+const longestWord = phrase => {
+  let wordArray = phrase.split(' ')
+  let maxlength = 0
+  let result = ''
+
+  for (let word of wordArray) {
+    if (word.length > maxlength) {
+      maxlength = word.length
+      result = word
+    }
+  }
+  return result
+}
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu')) // retorna 'aconteceu'
